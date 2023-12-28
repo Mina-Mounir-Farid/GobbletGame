@@ -3,15 +3,16 @@ package gobblet;
 public class Easy implements ScoreEval {
 
     private Board board ;
+    boolean isBlack ;
 
     public Easy(Board board){
         this.board=board;
+        this.isBlack=false;
     }
 
-
-
     @Override
-    public int evaluateBoard( boolean isBlack) {
+    public int evaluateBoard() {
+    
         int score = 0;
 
         // Evaluate rows
