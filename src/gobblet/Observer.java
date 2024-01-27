@@ -7,4 +7,5 @@ public interface Observer {
     default boolean isNeutral(){
         return false;
     } 
+    default void switchRole(){}
 }
